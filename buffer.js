@@ -14,3 +14,11 @@ buf = new Buffer('Simply Easy Learning');
 var json = buf.toJSON(buf);
 console.log("****** To json*******")
 console.log(json);
+
+
+// buffer concate
+var buffer1 = new Buffer('TutorialsPoint ');
+var buffer2 = new Buffer('Simply Easy Learning');
+var buffer3 = Buffer.concat([buffer1,buffer2]);
+console.log("****** concate*******")
+console.log("buffer3 content: " + buffer3.toString());
